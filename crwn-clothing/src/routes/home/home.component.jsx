@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import DirectoryCmp from "../../components/directory/directory.component";
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
   
   return (
     <>
+    <Outlet /> 
     <DirectoryCmp categories={categories}/>
     </>
   );
